@@ -16,6 +16,11 @@ export const ButtonContainer = styled.button`
       min-width: 167px;
       background-color: #e4105d;
 
+      &:hover {
+        background-color: #ff007f;
+        opacity: 0.6;
+      }
+
       &::after {
         content: '';
         position: absolute;
@@ -25,6 +30,11 @@ export const ButtonContainer = styled.button`
         width: calc(100% + 10px);
         height: calc(100% + 10px);
         border-radius: 22px;
+        cursor: pointer;
+
+        &:hover {
+          border-color: #ff007f; /* Mude a cor da borda no hover */
+        }
       }
     `}
 `;

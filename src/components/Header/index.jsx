@@ -17,16 +17,16 @@ const Header = () => {
         <Container>
           <Row>
             <img src={logo} alt="Logo da Dio" />
-            <Button title="Entrar" />
-            <Button title="Cadastrar" />
-          </Row>
-          <Row>
-            <MenuRight href="#">Home</MenuRight>
             <BuscarInput>
               <Input />
             </BuscarInput>
             <Menu>Live Code</Menu>
             <Menu>Global</Menu>
+          </Row>
+          <Row>
+            <MenuRight href="#">Home</MenuRight>
+            <Button title="Entrar" />
+            <Button title="Cadastrar" />
           </Row>
         </Container>
       </Wrapper>
