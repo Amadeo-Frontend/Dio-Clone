@@ -1,8 +1,16 @@
+import { useNavigate } from 'react-router-dom';
 import banner from '../../assets/banner.png';
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
 import { Container, TextContent, Title, TitleHighLigth } from './styles';
+
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleClickLogin = () => {
+    navigate('/login');
+  };
+
   return (
     <>
       <Header />
@@ -22,7 +30,7 @@ const Home = () => {
           <Button
             title="Começar agora"
             variant="secundary"
-            onClick={() => null}
+            onClick={handleClickLogin}
           />
         </div>
         <div>

@@ -1,5 +1,7 @@
+import { MdSearch } from 'react-icons/md';
 import logo from '../../assets/logo-dio.png';
 import { Button } from '../Button';
+import { UserPicture } from '../Card/styles';
 import {
   BuscarInput,
   Container,
@@ -10,23 +12,33 @@ import {
   Wrapper,
 } from './styles';
 
-const Header = () => {
+const Header = ({ authenticated }) => {
   return (
     <>
       <Wrapper>
         <Container>
           <Row>
             <img src={logo} alt="Logo da Dio" />
-            <BuscarInput>
-              <Input />
-            </BuscarInput>
-            <Menu>Live Code</Menu>
-            <Menu>Global</Menu>
+            {authenticated ? (
+              <>
+                <BuscarInput>
+                  <Input placeholder="BUSCAR" leftIcon={<MdSearch />} />
+                </BuscarInput>
+                <Menu>Live Code</Menu>
+                <Menu>Global</Menu>
+              </>
+            ) : null}
           </Row>
           <Row>
-            <MenuRight href="#">Home</MenuRight>
-            <Button title="Entrar" />
-            <Button title="Cadastrar" />
+            {authenticated ? (
+              <UserPicture src="https://avatars.githubusercontent.com/u/104178969?s=96&v=4" />
+            ) : (
+              <>
+                <MenuRight href="/">Home</MenuRight>
+                <Button title="Entrar" />
+                <Button title="Cadastrar" />
+              </>
+            )}
           </Row>
         </Container>
       </Wrapper>
