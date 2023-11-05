@@ -1,11 +1,24 @@
+import React from 'react';
 import { ButtonContainer } from './styles';
-const Button = ({ title, variant = 'primary', onClick }) => {
+
+type ButtonProps = {
+  title: string,
+  variant?: 'primary' | 'secondary', // Defina as variantes aceitáveis
+  onClick?: () => void,
+  className?: string, // Adicione a propriedade className para aceitar classes personalizadas
+};
+
+const Button: React.FC<ButtonProps> = ({
+  title,
+  variant = 'primary',
+  onClick,
+  className,
+}) => {
   return (
-    <>
-      <ButtonContainer variant={variant} onClick={onClick}>
-        {title}
-      </ButtonContainer>
-    </>
+    <ButtonContainer className={className} variant={variant} onClick={onClick}>
+      {title}
+    </ButtonContainer>
   );
 };
+
 export { Button };

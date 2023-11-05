@@ -14,6 +14,7 @@ export const IconContainer = styled.div`
   margin-right: 10px;
   display: flex;
   align-items: center;
+  color: #e23dd7;
 `;
 
 export const InputText = styled.input`

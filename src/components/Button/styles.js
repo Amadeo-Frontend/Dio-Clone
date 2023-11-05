@@ -18,7 +18,7 @@ export const ButtonContainer = styled.button`
 
       &:hover {
         background-color: #ff007f;
-        opacity: 0.6;
+        box-shadow: 0 0 20px #ff007f;
       }
 
       &::after {

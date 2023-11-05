@@ -33,8 +33,7 @@ export const Title = styled.h2`
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  letter-spacing: -0.5px;
-  width: 320px;
+  width: 370px;
   margin-bottom: 20px;
   color: #fff;
 `;
@@ -55,7 +54,6 @@ export const SubtitleLogin = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: -0.5px;
   margin-bottom: 35px;
 `;
 

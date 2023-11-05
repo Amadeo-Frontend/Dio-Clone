@@ -1,7 +1,7 @@
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
 import { MdEmail, MdLock } from 'react-icons/md';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import * as yup from 'yup';
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
@@ -45,7 +45,7 @@ const Login = () => {
   const onSubmit = async (formData) => {
     try {
       const { data } = await api.get(
-        `users?email=${formData.email}&senha=${formData.password}`,
+        `users?email=${formData.email}&password=${formData.password}`,
       );
       if (data.length === 1) {
         navigate('/feed');
@@ -92,7 +92,9 @@ const Login = () => {
             </form>
             <Row>
               <EsqueciText>Esqueci minha senha</EsqueciText>
-              <CriarText>Criar conta</CriarText>
+              <Link to="/register">
+                <CriarText>Criar conta</CriarText>
+              </Link>
             </Row>
           </Wrapper>
         </div>
