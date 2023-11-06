@@ -24,7 +24,7 @@ Este é um projeto de clone da plataforma DIO (Digital Innovation One), desenvol
 
 - **React JS:** O framework JavaScript utilizado como base para a construção da aplicação.
 
-- React Router: Gerenciamento de rotas na aplicação.
+- **React Router**: Gerenciamento de rotas na aplicação.
 
 - **Styled-components:** O estilo da aplicação é criado com styled-components para uma experiência visual atraente.
 
