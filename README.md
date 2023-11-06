@@ -48,3 +48,4 @@ Apreciamos o seu interesse em GitHub Wiki e esperamos que esta aplicação torne
 ![Image Generation App](https://github.com/Amadeo-Frontend/images_sites/blob/main/Dio-clone-1.png)
 ![Image Generation App](https://github.com/Amadeo-Frontend/images_sites/blob/main/Dio-clone-2.png)
 ![Image Generation App](https://github.com/Amadeo-Frontend/images_sites/blob/main/Dio-clone-3.png)
+![Image Generation App](https://github.com/Amadeo-Frontend/images_sites/blob/main/Dio-clone-4.png)
