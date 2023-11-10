@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-
+interface ProgressProps {
+  percentual?: number; // Tipando a propriedade percentual
+}
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
@@ -24,7 +26,7 @@ export const NameText = styled.div`
   color: #fff;
 `;
 
-export const Progress = styled.div`
+export const Progress = styled.div<ProgressProps>`
   width: 180px;
   height: 6px;
   background-color: #fff;

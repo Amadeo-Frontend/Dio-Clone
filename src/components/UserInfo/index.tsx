@@ -1,7 +1,8 @@
 import { Container, NameText, Progress, UserPicture } from './styles';
-const UserInfo = ({ name, image, percentual }) => {
+import { IUserInfo } from './types';
+const UserInfo = ({ name, image, percentual }:IUserInfo) => {
   return (
-    <>
+    
       <Container>
         <UserPicture src={image} />
         <div>
@@ -9,7 +10,7 @@ const UserInfo = ({ name, image, percentual }) => {
           <Progress percentual={percentual} />
         </div>
       </Container>
-    </>
+    
   );
 };
 

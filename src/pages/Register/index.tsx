@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { MdAccountCircle, MdEmail, MdLock } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
 import * as yup from 'yup';
+import { InferType } from 'yup';
 import { Header } from '../../components/Header';
 import { Input } from '../../components/Input/input';
 import {
@@ -24,6 +25,7 @@ const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const senhaRegex = /^.{4,}$/;
 
 const schema = yup.object({
+  name: yup.string().required('Insira seu nome completo'),
   email: yup
     .string()
     .matches(emailRegex, 'Email não é válido')
@@ -43,7 +45,8 @@ const Register = () => {
     resolver: yupResolver(schema),
     mode: 'all',
   });
-  const onSubmit = async (data) => {
+  type FormData = InferType<typeof schema>;
+  const onSubmit = async (data:FormData) => {
     try {
       // Fazer uma solicitação POST para a sua API local para criar um usuário
       const response = await axios.post('http://localhost:8001/api/users', {
@@ -105,7 +108,7 @@ const Register = () => {
               />
               <CustomButton
                 title="Criar minha conta"
-                variant="secundary"
+                variant="secondary"
                 type="submit"
               />
             </form>

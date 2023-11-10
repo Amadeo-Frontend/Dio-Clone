@@ -1,6 +1,11 @@
 import styled, { css } from 'styled-components';
-
-export const ButtonContainer = styled.button`
+interface ButtonContainerProps {
+  variant?: 'primary' | 'secondary';
+  className?: string;
+  onClick?: () => void;
+  children: React.ReactNode;
+}
+export const ButtonContainer = styled.button<ButtonContainerProps>`
   background-color: #565656;
   border-radius: 22px;
   position: relative;

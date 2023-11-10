@@ -29,7 +29,7 @@ const Home = () => {
           </TextContent>
           <Button
             title="Começar agora"
-            variant="secundary"
+            variant="secondary"
             onClick={handleClickLogin}
           />
         </div>

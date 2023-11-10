@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { MdEmail, MdLock } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
 import * as yup from 'yup';
+import { InferType } from 'yup';
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
 import { Input } from '../../components/Input/input';
@@ -22,6 +23,7 @@ import {
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const senhaRegex = /^.{4,}$/;
 
+// Defina o esquema de validação
 const schema = yup.object({
   email: yup
     .string()
@@ -32,7 +34,12 @@ const schema = yup.object({
     .matches(senhaRegex, 'A senha deve ter no mínimo 4 caracteres')
     .required('Insira sua senha'),
 });
-const Login = () => {
+
+// Infira a forma dos dados do formulário a partir do esquema
+type FormData = InferType<typeof schema>;
+
+// Infira o tipo para o componente Login
+const Login: React.FC = () => {
   const navigate = useNavigate();
   const {
     control,
@@ -42,7 +49,8 @@ const Login = () => {
     resolver: yupResolver(schema),
     mode: 'all',
   });
-  const onSubmit = async (formData) => {
+
+  const onSubmit = async (formData: FormData) => {
     try {
       const { data } = await api.get(
         `users?email=${formData.email}&password=${formData.password}`,
@@ -88,7 +96,7 @@ const Login = () => {
                 type="password"
                 leftIcon={<MdLock />}
               />
-              <Button title="Entrar" variant="secundary" type="submit" />
+              <Button title="Entrar" variant="secondary" type="submit" />
             </form>
             <Row>
               <EsqueciText>Esqueci minha senha</EsqueciText>

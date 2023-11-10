@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface InputProps {
+  placeholder: string;
+  leftIcon?: React.ReactNode; // Adicione esta linha
+}
 export const Container = styled.div`
   width: 100%;
   max-width: 80%;
@@ -77,7 +81,7 @@ export const UserImg = styled.img`
   border: 2px solid #fff;
 `;
 
-export const Input = styled.input`
+export const Input = styled.input<InputProps>`
   background-color: transparent;
   flex: 1;
   outline: none;

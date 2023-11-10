@@ -11,11 +11,11 @@ import {
   Row,
   Wrapper,
 } from './styles';
+import { IHeader } from './types';
 
-const Header = ({ authenticated }) => {
+const Header = ({ authenticated }:IHeader) => {
   return (
-    <>
-      <Wrapper>
+    <Wrapper>
         <Container>
           <Row>
             <img src={logo} alt="Logo da Dio" />
@@ -42,7 +42,6 @@ const Header = ({ authenticated }) => {
           </Row>
         </Container>
       </Wrapper>
-    </>
   );
 };
 export { Header };
