@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+##
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Projeto Dio - Clone</h1>
 
-## Available Scripts
+</br>
 
-In the project directory, you can run:
+<div style="display: inline_block" align="center">
+     <img align="center" alt="Amadeo-ReactJs" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+     <img align="center" alt="Amadeo-JS" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+     <img align="center" alt="Amadeo-styled" src="https://img.shields.io/badge/styled-components-1572B6?style=for-the-badge&logo=styled-components&logoColor=white">
+     <img align="center" alt="Amadeo-axios" src="https://img.shields.io/badge/axios-20232A?style=for-the-badge&logo=axios&logoColor">
+  </div>
+  </br>
 
-### `npm start`
+# Dio Clone
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Este é um projeto de clone da plataforma DIO (Digital Innovation One), desenvolvido usando React, React Router, Styled Components e Axios. O projeto é baseado em um layout do Figma e tem como objetivo demonstrar minhas habilidades de desenvolvimento web.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Recursos Principais
 
-### `npm test`
+- O objetivo deste projeto é criar uma versão simplificada da plataforma DIO, que inclui algumas das principais funcionalidades, cadastro de usuários, login de usuários, e a visualização do dashboard.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias Utilizadas
 
-### `npm run build`
+- **React JS:** O framework JavaScript utilizado como base para a construção da aplicação.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React Router**: Gerenciamento de rotas na aplicação.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Styled-components:** O estilo da aplicação é criado com styled-components para uma experiência visual atraente.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Axios:** A API do GitHub é usada para buscar informações de repositórios e usuários em tempo real.
 
-### `npm run eject`
+## Instalação
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone este repositório.
+2. Instale as dependências usando `npm install`.
+3. Execute a aplicação com `npm start`.
+4. Comece a buscar e explorar repositórios do GitHub!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Apreciamos o seu interesse em GitHub Wiki e esperamos que esta aplicação torne sua experiência de busca de repositórios no GitHub mais eficiente e agradável. Se tiver alguma sugestão ou feedback, por favor, compartilhe comigo!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Live
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+(https://dio-clone-lovat.vercel.app/)
 
-## Learn More
+#
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Image Generation App](https://github.com/Amadeo-Frontend/images_sites/blob/main/Dio-clone-1.png)
+![Image Generation App](https://github.com/Amadeo-Frontend/images_sites/blob/main/Dio-clone-2.png)
+![Image Generation App](https://github.com/Amadeo-Frontend/images_sites/blob/main/Dio-clone-3.png)
+![Image Generation App](https://github.com/Amadeo-Frontend/images_sites/blob/main/Dio-clone-4.png)
