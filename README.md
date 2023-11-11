@@ -6,7 +6,7 @@
 
 <div style="display: inline_block" align="center">
      <img align="center" alt="Amadeo-ReactJs" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-     <img align="center" alt="Amadeo-JS" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+     <img align="center" alt="Amadeo-JS" src="https://img.shields.io/badge/TypeScript-323330?style=for-the-badge&logo=typescript&logoColor">
      <img align="center" alt="Amadeo-styled" src="https://img.shields.io/badge/styled-components-1572B6?style=for-the-badge&logo=styled-components&logoColor=white">
      <img align="center" alt="Amadeo-axios" src="https://img.shields.io/badge/axios-20232A?style=for-the-badge&logo=axios&logoColor">
   </div>
