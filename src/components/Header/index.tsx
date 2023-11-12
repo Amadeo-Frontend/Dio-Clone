@@ -1,8 +1,7 @@
-import { useContext } from 'react';
 import { MdSearch } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo-dio.png';
-import { AuthContext } from '../../context/auth';
+import { useAuth } from '../../hooks/useAuth';
 import { Button } from '../Button';
 import { UserPicture } from '../Card/styles';
 import {
@@ -16,7 +15,7 @@ import {
 } from './styles';
 
 const Header = () => {
-  const {user , handleSingOut} = useContext(AuthContext);
+  const {user , handleSingOut} = useAuth();
   return (
     <Wrapper>
         <Container>
@@ -41,8 +40,8 @@ const Header = () => {
             ) : (
               <>
                 <MenuRight href="/">Home</MenuRight>
-                <Button title="Entrar" />
-                <Button title="Cadastrar" />
+                <Link to='/login'><Button title="Entrar" /></Link>
+                <Link to='/register'><Button title="Cadastrar" /></Link>
               </>
             )}
           </Row>

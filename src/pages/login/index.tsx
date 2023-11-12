@@ -1,5 +1,4 @@
 import { yupResolver } from '@hookform/resolvers/yup';
-import { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { MdEmail, MdLock } from 'react-icons/md';
 import { Link } from 'react-router-dom';
@@ -8,7 +7,7 @@ import { InferType } from 'yup';
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
 import { Input } from '../../components/Input/input';
-import { AuthContext } from '../../context/auth';
+import { useAuth } from '../../hooks/useAuth';
 import {
   Column,
   Container,
@@ -41,7 +40,7 @@ type FormData = InferType<typeof schema>;
 
 // Infira o tipo para o componente Login
 const Login: React.FC = () => {
-  const {handleLogin} = useContext(AuthContext);
+  const {handleLogin} = useAuth();
   const {
     control,
     handleSubmit,
