@@ -1,5 +1,8 @@
+import { useContext } from 'react';
 import { MdSearch } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/logo-dio.png';
+import { AuthContext } from '../../context/auth';
 import { Button } from '../Button';
 import { UserPicture } from '../Card/styles';
 import {
@@ -11,15 +14,15 @@ import {
   Row,
   Wrapper,
 } from './styles';
-import { IHeader } from './types';
 
-const Header = ({ authenticated }:IHeader) => {
+const Header = () => {
+  const {user , handleSingOut} = useContext(AuthContext);
   return (
     <Wrapper>
         <Container>
           <Row>
-            <img src={logo} alt="Logo da Dio" />
-            {authenticated ? (
+            <Link to='/'><img src={logo} alt="Logo da Dio" /></Link>
+            {user.id ? (
               <>
                 <BuscarInput>
                   <Input placeholder="BUSCAR" leftIcon={<MdSearch />} />
@@ -30,8 +33,11 @@ const Header = ({ authenticated }:IHeader) => {
             ) : null}
           </Row>
           <Row>
-            {authenticated ? (
-              <UserPicture src="https://avatars.githubusercontent.com/u/104178969?s=96&v=4" />
+            {user.id ? (
+              <>
+              <UserPicture src="https://avatars.githubusercontent.com/u/104178969?s=96&v=4" />{" "}
+              <a href='#' onClick={handleSingOut}>Sair</a>
+              </>
             ) : (
               <>
                 <MenuRight href="/">Home</MenuRight>

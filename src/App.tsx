@@ -7,16 +7,16 @@ import Login from './pages/login';
 
 function App() {
   return (
-    <AuthContextProvider>
-      <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/feed" element={<Feed />} />
-        <Route path="/register" element={<Register />} />
-      </Routes>
+    <Router>
+      <AuthContextProvider>
+       <Routes>
+         <Route path="/" element={<Home />} />
+         <Route path="/login" element={<Login />} />
+         <Route path="/feed" element={<Feed />} />
+         <Route path="/register" element={<Register />} />
+       </Routes>
+      </AuthContextProvider>
     </Router>
-  </AuthContextProvider>
     );
 }
 

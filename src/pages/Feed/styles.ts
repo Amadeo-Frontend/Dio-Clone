@@ -21,6 +21,12 @@ export const Title = styled.h3`
   color: #fff;
 `;
 
+export const TitleUser = styled.p`
+margin-bottom: 8px;
+font-weight: 700;
+font-size: 22px;
+`
+
 export const TitleHighLigth = styled.h3`
   font-family: 'Open Sans', sans-serif;
   font-style: normal;

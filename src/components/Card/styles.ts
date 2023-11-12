@@ -56,6 +56,7 @@ export const UserPicture = styled.img`
   height: 32px;
   border-radius: 22px;
   border: 3px solid #fafafa;
+  margin-right: 8px;
 `;
 
 export const PostInfo = styled.div`

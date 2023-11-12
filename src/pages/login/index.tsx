@@ -1,13 +1,14 @@
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { MdEmail, MdLock } from 'react-icons/md';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import * as yup from 'yup';
 import { InferType } from 'yup';
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
 import { Input } from '../../components/Input/input';
-import { api } from '../../services/api';
+import { AuthContext } from '../../context/auth';
 import {
   Column,
   Container,
@@ -40,7 +41,7 @@ type FormData = InferType<typeof schema>;
 
 // Infira o tipo para o componente Login
 const Login: React.FC = () => {
-  const navigate = useNavigate();
+  const {handleLogin} = useContext(AuthContext);
   const {
     control,
     handleSubmit,
@@ -51,18 +52,7 @@ const Login: React.FC = () => {
   });
 
   const onSubmit = async (formData: FormData) => {
-    try {
-      const { data } = await api.get(
-        `users?email=${formData.email}&password=${formData.password}`,
-      );
-      if (data.length === 1) {
-        navigate('/feed');
-      } else {
-        alert('Usuário ou Senha inválidos');
-      }
-    } catch {
-      alert('Falha na autenticação');
-    }
+    handleLogin(formData);
   };
 
   return (
