@@ -37,7 +37,7 @@ Este é um projeto de clone da plataforma DIO (Digital Innovation One), desenvol
 3. Execute a aplicação com `npm start`.
 4. Comece a buscar e explorar repositórios do GitHub!
 
-Apreciamos o seu interesse em GitHub Wiki e esperamos que esta aplicação torne sua experiência de busca de repositórios no GitHub mais eficiente e agradável. Se tiver alguma sugestão ou feedback, por favor, compartilhe comigo!
+Agradeço o seu interesse neste projeto. Se tiver alguma sugestão ou feedback, por favor, compartilhe comigo!
 
 ## Live
 
